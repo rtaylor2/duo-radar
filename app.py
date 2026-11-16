@@ -5,6 +5,7 @@ import pandas as pd
 import requests
 import streamlit as st
 from inventory_core import APPLE, fetch, flatten, now, parse_time, sightings
+from alerts import is_fresh
 
 st.set_page_config(page_title="Ron's iPhone Duo Radar",page_icon='📱',layout='wide')
 st.markdown('''<style>.stApp{background:#0b1020;color:#e9eefc}.block-container{padding-top:1.5rem;max-width:1450px}h1,h2,h3{letter-spacing:-.025em}[data-testid="stMetric"]{background:#151d31;border:1px solid #2b3550;padding:15px;border-radius:14px}a{color:#85bdff!important}</style>''',unsafe_allow_html=True)
@@ -26,6 +27,7 @@ def history():
 @st.fragment(run_every='30s')
 def panel():
     st.subheader('Current reported availability')
+    st.caption('🔔 On-screen alerts appear when newly reported inventory is detected while this browser tab is open. Phone/email alerts run separately through GitHub Actions.')
     try:
         payload=live(); rows=flatten(payload)
         stamp=payload.get('generated_at') or payload.get('updated_at')
@@ -38,6 +40,19 @@ def panel():
             st.warning('Feed does not provide a parseable timestamp; stock freshness cannot be confirmed.')
             fresh=False
         else: fresh=True
+        # Browser-side notifications require the page to remain open.
+        # First load establishes a baseline; later refreshes notify only newly seen keys.
+        if fresh:
+            active_keys={r['key'] for r in rows}
+            previous_keys=st.session_state.get('screen_active_keys')
+            if previous_keys is not None:
+                added=active_keys-previous_keys
+                if added:
+                    st.toast(f'📱 {len(added)} newly reported iPhone Duo listing(s)! Check the ordering links below.', icon='🔔')
+                    st.session_state['screen_new_count']=len(added)
+                else:
+                    st.session_state['screen_new_count']=0
+            st.session_state['screen_active_keys']=active_keys
     except Exception as exc:
         st.error(f'Live feed unavailable: {exc}. This does not mean sold out.')
         if st.button('Retry live feed'):

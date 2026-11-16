@@ -1,4 +1,6 @@
-
 __pycache__/
 *.pyc
 .venv/
+.env
+.streamlit/secrets.toml
+pending_alerts.json

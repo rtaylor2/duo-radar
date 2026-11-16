@@ -1,26 +1,28 @@
-# Duo Radar v2
+# Ron's iPhone Duo Radar — consolidated update v4
 
-Updates the original Streamlit dashboard with a live pin map when the upstream feed provides coordinates, last-24-hour inventory observations, a trend chart, and Apple checkout links beside reported configurations.
+This is a complete replacement of the dashboard application files. It includes:
 
-## Update existing GitHub repository
+- Correctly quoted `Ron's iPhone Duo Radar` title and browser tab title.
+- Live US Apple Store inventory reported by PickupChecker, with freshness warning.
+- Last 24 hours of reported restocks loaded directly from PickupChecker's restock API (maximum 200 events per response).
+- Map of currently reported inventory **only when the feed provides coordinates**. Missing coordinates are not invented.
+- Apple ordering-page links (not guaranteed direct store/configuration checkout).
+- Optional 10-minute GitHub Actions inventory snapshot workflow.
 
-Extract the ZIP. Copy **the contents** of `duo_radar_v2` (including hidden `.github`) into your existing `duo_web_dashboard` repository folder, replacing `app.py`, `requirements.txt`, and `README.md` and adding `inventory_core.py`, `collect.py`, `history.json`, and `.github/workflows/inventory-history.yml`.
+Verizon inventory is **not** covered by these Apple Store feeds. No source is claimed to provide a confirmed purchase or reservation.
 
-From your repo folder:
+## Deploy in one update
+
+Extract the ZIP. Copy **all** its contents, including the hidden `.github` directory, into the root of your existing local `duo_web_dashboard` Git repository, replacing matching files. Do not replace or delete your `.git` directory.
 
 ```bash
-git add .
-git commit -m "Add inventory history, map, and checkout links"
+cd ~/Downloads/duo_web_dashboard
+python3 -m py_compile app.py inventory_core.py collect.py
+git add app.py inventory_core.py collect.py requirements.txt README.md history.json .github/workflows/inventory-history.yml
+git commit -m "Consolidate title fix, live map, 24h history and order links"
 git push
 ```
 
-GitHub Actions > Collect public inventory observations > Run workflow starts the first collection. Scheduled runs occur roughly every 10 minutes (not guaranteed; GitHub may delay/skip runs). Ensure Actions is enabled and workflow has contents:write permission. Streamlit Cloud redeploys after pushes. It may sleep when unused.
+The syntax check should print nothing on success. Verify the published app after Streamlit redeploys. GitHub Actions scheduled jobs can be delayed. Streamlit may sleep when idle. Historical restock status is a provider observation and should be rechecked at Apple.
 
-## Important caveats
-
-- The endpoint `https://pickupchecker.com/api/v1/us/stock?model=duo` is **unofficial and not live-verified**. If it rejects requests or returns a different schema, the dashboard reports an error rather than fabricated stock. Verify provider permission and rate limits before enabling automated public polling.
-- **History begins after you enable the collector**. It cannot reconstruct past 24 hours from a current-stock endpoint. Each saved snapshot is an observation; first-seen timestamps are not necessarily restock times. A stale provider timestamp is rejected for collection.
-- **Map pins only show locations for which the provider supplies coordinates.** If none are present, the app explains why instead of inventing positions.
-- Checkout links go to the official Apple purchase page, not a preselected cart. Apple does not guarantee that a specific store's inventory is reserved by opening the link.
-- Verizon store inventory is not supported by this source.
-- Do not store secrets in the public repo. GitHub Actions writes to `history.json` in your public repository.
+Source: https://pickupchecker.com/iphone-duo-stock-api — attribution required by the provider. API response has not been end-to-end tested in this runtime.

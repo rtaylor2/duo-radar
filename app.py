@@ -5,9 +5,9 @@ import pandas as pd
 import streamlit as st
 from inventory_core import APPLE, fetch, flatten, now, parse_time, sightings
 
-st.set_page_config(page_title='Duo Radar | Nationwide Pickup',page_icon='📱',layout='wide')
+st.set_page_config(page_title='Rons Iphone Duo Radar | Nationwide Pickup',page_icon='📱',layout='wide')
 st.markdown('''<style>.stApp{background:#0b1020;color:#e9eefc}.block-container{padding-top:1.5rem;max-width:1450px}h1,h2,h3{letter-spacing:-.025em}[data-testid="stMetric"]{background:#151d31;border:1px solid #2b3550;padding:15px;border-radius:14px}a{color:#85bdff!important}</style>''',unsafe_allow_html=True)
-st.title('📱 Duo Radar')
+st.title('📱 Ron's Iphone Duo Radar')
 st.caption('Nationwide Apple Store pickup • 24-hour observed history • unofficial third-party feed')
 st.info('Apple Store inventory only — Verizon corporate-store stock is not available through this feed. A reported listing is not a reservation.')
 

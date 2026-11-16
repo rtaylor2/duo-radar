@@ -1,40 +1,26 @@
-# Duo Radar — shareable Apple pickup dashboard
+# Duo Radar v2
 
-A public, read-only Streamlit dashboard for nationwide iPhone Duo Apple Store pickup availability. Uses the unofficial third-party PickupChecker endpoint `https://pickupchecker.com/api/v1/us/stock?model=duo`.
+Updates the original Streamlit dashboard with a live pin map when the upstream feed provides coordinates, last-24-hour inventory observations, a trend chart, and Apple checkout links beside reported configurations.
 
-## Run on your Mac
+## Update existing GitHub repository
+
+Extract the ZIP. Copy **the contents** of `duo_radar_v2` (including hidden `.github`) into your existing `duo_web_dashboard` repository folder, replacing `app.py`, `requirements.txt`, and `README.md` and adding `inventory_core.py`, `collect.py`, `history.json`, and `.github/workflows/inventory-history.yml`.
+
+From your repo folder:
 
 ```bash
-cd ~/Downloads/duo_web_dashboard
-python3 -m pip install -r requirements.txt
-python3 -m streamlit run app.py
+git add .
+git commit -m "Add inventory history, map, and checkout links"
+git push
 ```
 
-Streamlit prints a local URL (usually http://localhost:8501). Keep Terminal open.
+GitHub Actions > Collect public inventory observations > Run workflow starts the first collection. Scheduled runs occur roughly every 10 minutes (not guaranteed; GitHub may delay/skip runs). Ensure Actions is enabled and workflow has contents:write permission. Streamlit Cloud redeploys after pushes. It may sleep when unused.
 
-## Publish free with Streamlit Community Cloud
+## Important caveats
 
-1. Create a GitHub repository, for example `duo-radar`.
-2. Upload `app.py`, `requirements.txt`, and this README to the repository root.
-3. Visit https://share.streamlit.io/ and sign in with GitHub.
-4. Select **Create app**, choose your repository and branch, and set the entry point to `app.py`.
-5. Deploy. Streamlit provides a public URL you can send to your friend.
-
-The app refreshes every 30 seconds **while the browser tab is open**. It does not send background alerts or run a continuously polling server when no one is viewing it. Free hosting may sleep when idle.
-
-## Important limitations
-
-- Apple Store pickup only; **no Verizon corporate-store inventory**.
-- The data feed is third-party, unofficial, and may be unavailable, change schema, or limit public use. Confirm permission and rate limits before publishing widely.
-- The API endpoint was taken from the existing CLI tracker and has **not been live-validated in this build**. An error banner is shown if it fails; errors are never displayed as sold-out inventory.
-- Reported stock is not a reservation. Always confirm in Apple's checkout.
-- No passwords, payment data, or private tokens are required.
-- The dashboard uses Streamlit's 25-second cache to reduce repeated upstream requests, including when multiple viewers open it.
-
-## Optional API override
-
-Set environment variable `DUO_STOCK_API` to an authorized compatible JSON endpoint. Expected response shape:
-
-```json
-{"generated_at":"2026-11-16T16:00:00Z","stores":[{"name":"Example Store","city":"Example City","state":"NC","store_number":"R001","available":[{"storage":"256GB","color":"White","part_number":"EXAMPLE"}]}]}
-```
+- The endpoint `https://pickupchecker.com/api/v1/us/stock?model=duo` is **unofficial and not live-verified**. If it rejects requests or returns a different schema, the dashboard reports an error rather than fabricated stock. Verify provider permission and rate limits before enabling automated public polling.
+- **History begins after you enable the collector**. It cannot reconstruct past 24 hours from a current-stock endpoint. Each saved snapshot is an observation; first-seen timestamps are not necessarily restock times. A stale provider timestamp is rejected for collection.
+- **Map pins only show locations for which the provider supplies coordinates.** If none are present, the app explains why instead of inventing positions.
+- Checkout links go to the official Apple purchase page, not a preselected cart. Apple does not guarantee that a specific store's inventory is reserved by opening the link.
+- Verizon store inventory is not supported by this source.
+- Do not store secrets in the public repo. GitHub Actions writes to `history.json` in your public repository.

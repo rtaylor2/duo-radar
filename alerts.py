@@ -67,3 +67,18 @@ def deliver(row):
         fn()
         print(f'{name}: accepted for {row["key"]}')
     return 'sent'
+
+def is_fresh(payload, observed=None):
+    """Check that the inventory feed has a recent timestamp."""
+    import datetime as dt
+    from inventory_core import now, parse_time
+
+    observed = observed or now()
+    t = parse_time(payload.get("generated_at") or payload.get("updated_at"))
+
+    return (
+        t is not None
+        and dt.timedelta(minutes=-5)
+        <= observed - t
+        <= dt.timedelta(minutes=10)
+    )

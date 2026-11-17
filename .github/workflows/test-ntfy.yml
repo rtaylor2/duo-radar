@@ -1,0 +1,19 @@
+name: Test ntfy notification
+
+on:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send test notification
+        env:
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+        run: |
+          test -n "$NTFY_TOPIC" || { echo "NTFY_TOPIC is missing"; exit 1; }
+          curl --fail-with-body --show-error --silent \
+            -H "Title: Duo Radar GitHub Test" \
+            -H "Priority: high" \
+            -d "TEST ONLY: GitHub Actions can send Duo Radar notifications." \
+            "https://ntfy.sh/${NTFY_TOPIC}"

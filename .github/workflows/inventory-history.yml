@@ -20,15 +20,15 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install requests
-      - name: Poll inventory and calculate newly observed listings
+      - name: Poll inventory and queue new sightings
         run: python collect.py
-      - name: Persist deduplication state before sending alerts
+      - name: Commit observations and pending queue
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add history.json alert_state.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add history.json alert_state.json pending_alerts.json
           if ! git diff --cached --quiet; then
-            git commit -m "Update inventory observations and alert state"
+            git commit -m 'Update inventory observations and pending alerts'
             git push origin HEAD:main
           fi
       - name: Send notifications
@@ -43,3 +43,11 @@ jobs:
           ALERT_EMAIL_TO: ${{ secrets.ALERT_EMAIL_TO }}
           ALERT_EMAIL_FROM: ${{ secrets.ALERT_EMAIL_FROM }}
         run: python send_alerts.py
+      - name: Commit delivered queue state
+        if: always()
+        run: |
+          git add pending_alerts.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update pending alert delivery queue'
+            git push origin HEAD:main
+          fi

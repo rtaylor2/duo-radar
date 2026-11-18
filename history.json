@@ -1,25 +1,5 @@
 [
   {
-    "observed_at": "2026-11-16T23:51:16Z",
-    "provider_at": "2026-11-16T23:51:04Z",
-    "items": []
-  },
-  {
-    "observed_at": "2026-11-17T02:40:54Z",
-    "provider_at": "2026-11-17T02:40:49Z",
-    "items": []
-  },
-  {
-    "observed_at": "2026-11-17T02:54:21Z",
-    "provider_at": "2026-11-17T02:53:51Z",
-    "items": []
-  },
-  {
-    "observed_at": "2026-11-17T02:59:23Z",
-    "provider_at": "2026-11-17T02:59:06Z",
-    "items": []
-  },
-  {
     "observed_at": "2026-11-17T04:45:12Z",
     "provider_at": "2026-11-17T04:45:08Z",
     "items": []
@@ -423,6 +403,29 @@
         "lon": -87.915186,
         "observed_at": "2026-11-17T21:55:24Z",
         "source_url": "https://pickupchecker.com/stores/wisconsin/glendale/bayshore",
+        "pickup_url": null
+      }
+    ]
+  },
+  {
+    "observed_at": "2026-11-18T03:14:40Z",
+    "provider_at": "2026-11-18T03:14:00Z",
+    "items": [
+      {
+        "key": "Apple|R106|MK1E4LL/A",
+        "Retailer": "Apple",
+        "Store": "Southcenter",
+        "City": "Tukwila",
+        "State": "Washington",
+        "ZIP": "",
+        "Storage": "256GB",
+        "Color": "Star White",
+        "Part": "MK1E4LL/A",
+        "Store ID": "R106",
+        "lat": 47.45935,
+        "lon": -122.258,
+        "observed_at": "2026-11-18T03:13:59Z",
+        "source_url": "https://pickupchecker.com/stores/washington/tukwila/southcenter",
         "pickup_url": null
       }
     ]

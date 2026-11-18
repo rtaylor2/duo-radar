@@ -202,5 +202,22 @@
     "observed_at": "2026-11-17T21:55:24Z",
     "source_url": "https://pickupchecker.com/stores/wisconsin/glendale/bayshore",
     "pickup_url": null
+  },
+  {
+    "key": "Apple|R106|MK1E4LL/A",
+    "Retailer": "Apple",
+    "Store": "Southcenter",
+    "City": "Tukwila",
+    "State": "Washington",
+    "ZIP": "",
+    "Storage": "256GB",
+    "Color": "Star White",
+    "Part": "MK1E4LL/A",
+    "Store ID": "R106",
+    "lat": 47.45935,
+    "lon": -122.258,
+    "observed_at": "2026-11-18T03:13:59Z",
+    "source_url": "https://pickupchecker.com/stores/washington/tukwila/southcenter",
+    "pickup_url": null
   }
 ]

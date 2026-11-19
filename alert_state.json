@@ -2,8 +2,28 @@
   "initialized": true,
   "active": [
     "Apple|R492|MK1Q4LL/A",
-    "Apple|R492|MK1R4LL/A"
+    "Apple|R492|MK1R4LL/A",
+    "Apple|R650|MK1E4LL/A"
   ],
-  "last_poll": "2026-11-19T01:27:36.529618+00:00",
-  "last_new": []
+  "last_poll": "2026-11-19T09:01:28.918752+00:00",
+  "last_new": [
+    {
+      "key": "Apple|R650|MK1E4LL/A",
+      "Retailer": "Apple",
+      "Store": "Summerlin",
+      "City": "Las Vegas",
+      "State": "Nevada",
+      "ZIP": "",
+      "Storage": "256GB",
+      "Color": "Star White",
+      "Part": "MK1E4LL/A",
+      "Store ID": "R650",
+      "lat": 36.15009,
+      "lon": -115.3334,
+      "observed_at": "2026-11-19T09:01:20Z",
+      "source_url": "https://pickupchecker.com/stores/nevada/las-vegas/summerlin",
+      "pickup_url": null,
+      "detected_at": "2026-11-19T09:01:28.918754+00:00"
+    }
+  ]
 }

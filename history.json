@@ -1,28 +1,5 @@
 [
   {
-    "observed_at": "2026-11-18T03:14:40Z",
-    "provider_at": "2026-11-18T03:14:00Z",
-    "items": [
-      {
-        "key": "Apple|R106|MK1E4LL/A",
-        "Retailer": "Apple",
-        "Store": "Southcenter",
-        "City": "Tukwila",
-        "State": "Washington",
-        "ZIP": "",
-        "Storage": "256GB",
-        "Color": "Star White",
-        "Part": "MK1E4LL/A",
-        "Store ID": "R106",
-        "lat": 47.45935,
-        "lon": -122.258,
-        "observed_at": "2026-11-18T03:13:59Z",
-        "source_url": "https://pickupchecker.com/stores/washington/tukwila/southcenter",
-        "pickup_url": null
-      }
-    ]
-  },
-  {
     "observed_at": "2026-11-18T11:43:08Z",
     "provider_at": "2026-11-18T11:42:56Z",
     "items": []
@@ -323,6 +300,63 @@
         "lat": 31.77508,
         "lon": -106.3794,
         "observed_at": "2026-11-19T01:26:12Z",
+        "source_url": "https://pickupchecker.com/stores/texas/el-paso/cielovistamall",
+        "pickup_url": null
+      }
+    ]
+  },
+  {
+    "observed_at": "2026-11-19T09:01:28Z",
+    "provider_at": "2026-11-19T09:01:23Z",
+    "items": [
+      {
+        "key": "Apple|R650|MK1E4LL/A",
+        "Retailer": "Apple",
+        "Store": "Summerlin",
+        "City": "Las Vegas",
+        "State": "Nevada",
+        "ZIP": "",
+        "Storage": "256GB",
+        "Color": "Star White",
+        "Part": "MK1E4LL/A",
+        "Store ID": "R650",
+        "lat": 36.15009,
+        "lon": -115.3334,
+        "observed_at": "2026-11-19T09:01:20Z",
+        "source_url": "https://pickupchecker.com/stores/nevada/las-vegas/summerlin",
+        "pickup_url": null
+      },
+      {
+        "key": "Apple|R492|MK1Q4LL/A",
+        "Retailer": "Apple",
+        "Store": "Cielo Vista Mall",
+        "City": "El Paso",
+        "State": "Texas",
+        "ZIP": "",
+        "Storage": "2TB",
+        "Color": "Star White",
+        "Part": "MK1Q4LL/A",
+        "Store ID": "R492",
+        "lat": 31.77508,
+        "lon": -106.3794,
+        "observed_at": "2026-11-19T09:01:20Z",
+        "source_url": "https://pickupchecker.com/stores/texas/el-paso/cielovistamall",
+        "pickup_url": null
+      },
+      {
+        "key": "Apple|R492|MK1R4LL/A",
+        "Retailer": "Apple",
+        "Store": "Cielo Vista Mall",
+        "City": "El Paso",
+        "State": "Texas",
+        "ZIP": "",
+        "Storage": "2TB",
+        "Color": "Night Sky",
+        "Part": "MK1R4LL/A",
+        "Store ID": "R492",
+        "lat": 31.77508,
+        "lon": -106.3794,
+        "observed_at": "2026-11-19T09:01:20Z",
         "source_url": "https://pickupchecker.com/stores/texas/el-paso/cielovistamall",
         "pickup_url": null
       }

@@ -1,45 +1,5 @@
 [
   {
-    "observed_at": "2026-11-19T01:27:36Z",
-    "provider_at": "2026-11-19T01:26:13Z",
-    "items": [
-      {
-        "key": "Apple|R492|MK1R4LL/A",
-        "Retailer": "Apple",
-        "Store": "Cielo Vista Mall",
-        "City": "El Paso",
-        "State": "Texas",
-        "ZIP": "",
-        "Storage": "2TB",
-        "Color": "Night Sky",
-        "Part": "MK1R4LL/A",
-        "Store ID": "R492",
-        "lat": 31.77508,
-        "lon": -106.3794,
-        "observed_at": "2026-11-19T01:26:12Z",
-        "source_url": "https://pickupchecker.com/stores/texas/el-paso/cielovistamall",
-        "pickup_url": null
-      },
-      {
-        "key": "Apple|R492|MK1Q4LL/A",
-        "Retailer": "Apple",
-        "Store": "Cielo Vista Mall",
-        "City": "El Paso",
-        "State": "Texas",
-        "ZIP": "",
-        "Storage": "2TB",
-        "Color": "Star White",
-        "Part": "MK1Q4LL/A",
-        "Store ID": "R492",
-        "lat": 31.77508,
-        "lon": -106.3794,
-        "observed_at": "2026-11-19T01:26:12Z",
-        "source_url": "https://pickupchecker.com/stores/texas/el-paso/cielovistamall",
-        "pickup_url": null
-      }
-    ]
-  },
-  {
     "observed_at": "2026-11-19T09:01:28Z",
     "provider_at": "2026-11-19T09:01:23Z",
     "items": [
@@ -258,6 +218,11 @@
   {
     "observed_at": "2026-11-20T00:37:14Z",
     "provider_at": "2026-11-20T00:37:14Z",
+    "items": []
+  },
+  {
+    "observed_at": "2026-11-20T07:42:47Z",
+    "provider_at": "2026-11-20T07:42:41Z",
     "items": []
   }
 ]

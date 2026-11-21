@@ -1,22 +1,5 @@
 [
   {
-    "key": "Apple|R081|MK1F4LL/A",
-    "Retailer": "Apple",
-    "Store": "Eton",
-    "City": "Woodmere",
-    "State": "Ohio",
-    "ZIP": "",
-    "Storage": "256GB",
-    "Color": "Night Sky",
-    "Part": "MK1F4LL/A",
-    "Store ID": "R081",
-    "lat": 41.463332,
-    "lon": -81.474623,
-    "observed_at": "2026-11-20T22:42:36Z",
-    "source_url": "https://pickupchecker.com/stores/ohio/woodmere/eton",
-    "pickup_url": null
-  },
-  {
     "key": "Apple|R066|MK1F4LL/A",
     "Retailer": "Apple",
     "Store": "The Fashion Mall at Keystone",

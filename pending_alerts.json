@@ -2242,5 +2242,22 @@
     "observed_at": "2026-11-21T18:09:07Z",
     "source_url": "https://pickupchecker.com/stores/washington/tukwila/southcenter",
     "pickup_url": null
+  },
+  {
+    "key": "Apple|R414|MK1F4LL/A",
+    "Retailer": "Apple",
+    "Store": "4th Street",
+    "City": "Berkeley",
+    "State": "California",
+    "ZIP": "",
+    "Storage": "256GB",
+    "Color": "Night Sky",
+    "Part": "MK1F4LL/A",
+    "Store ID": "R414",
+    "lat": 37.869346,
+    "lon": -122.300122,
+    "observed_at": "2026-11-21T23:15:51Z",
+    "source_url": "https://pickupchecker.com/stores/california/berkeley/4thstreet",
+    "pickup_url": null
   }
 ]

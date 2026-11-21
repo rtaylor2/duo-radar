@@ -1,10 +1,5 @@
 [
   {
-    "observed_at": "2026-11-20T07:42:47Z",
-    "provider_at": "2026-11-20T07:42:41Z",
-    "items": []
-  },
-  {
     "observed_at": "2026-11-20T16:23:35Z",
     "provider_at": "2026-11-20T16:23:02Z",
     "items": [
@@ -290,6 +285,29 @@
         "lon": -97.80722,
         "observed_at": "2026-11-21T03:29:56Z",
         "source_url": "https://pickupchecker.com/stores/texas/austin/bartoncreek",
+        "pickup_url": null
+      }
+    ]
+  },
+  {
+    "observed_at": "2026-11-21T11:35:48Z",
+    "provider_at": "2026-11-21T11:35:18Z",
+    "items": [
+      {
+        "key": "Apple|R066|MK1G4LL/A",
+        "Retailer": "Apple",
+        "Store": "The Fashion Mall at Keystone",
+        "City": "Indianapolis",
+        "State": "Indiana",
+        "ZIP": "",
+        "Storage": "512GB",
+        "Color": "Star White",
+        "Part": "MK1G4LL/A",
+        "Store ID": "R066",
+        "lat": 39.9141,
+        "lon": -86.11181,
+        "observed_at": "2026-11-21T11:35:18Z",
+        "source_url": "https://pickupchecker.com/stores/indiana/indianapolis/thefashionmallatkeystone",
         "pickup_url": null
       }
     ]

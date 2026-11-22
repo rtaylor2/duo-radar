@@ -1,30 +1,6 @@
 {
   "initialized": true,
-  "active": [
-    "Apple|R007|MK1G4LL/A",
-    "Apple|R022|MK1G4LL/A",
-    "Apple|R286|MK1H4LL/A",
-    "Apple|R414|MK1F4LL/A"
-  ],
-  "last_poll": "2026-11-21T23:16:21.019285+00:00",
-  "last_new": [
-    {
-      "key": "Apple|R414|MK1F4LL/A",
-      "Retailer": "Apple",
-      "Store": "4th Street",
-      "City": "Berkeley",
-      "State": "California",
-      "ZIP": "",
-      "Storage": "256GB",
-      "Color": "Night Sky",
-      "Part": "MK1F4LL/A",
-      "Store ID": "R414",
-      "lat": 37.869346,
-      "lon": -122.300122,
-      "observed_at": "2026-11-21T23:15:51Z",
-      "source_url": "https://pickupchecker.com/stores/california/berkeley/4thstreet",
-      "pickup_url": null,
-      "detected_at": "2026-11-21T23:16:21.019288+00:00"
-    }
-  ]
+  "active": [],
+  "last_poll": "2026-11-22T03:12:23.210737+00:00",
+  "last_new": []
 }

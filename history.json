@@ -2487,5 +2487,10 @@
         "pickup_url": null
       }
     ]
+  },
+  {
+    "observed_at": "2026-11-22T03:12:23Z",
+    "provider_at": "2026-11-22T03:11:54Z",
+    "items": []
   }
 ]

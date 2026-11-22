@@ -1,79 +1,5 @@
 [
   {
-    "observed_at": "2026-11-21T23:16:21Z",
-    "provider_at": "2026-11-21T23:15:53Z",
-    "items": [
-      {
-        "key": "Apple|R286|MK1H4LL/A",
-        "Retailer": "Apple",
-        "Store": "The Promenade at Chenal",
-        "City": "Little Rock",
-        "State": "Arkansas",
-        "ZIP": "",
-        "Storage": "512GB",
-        "Color": "Night Sky",
-        "Part": "MK1H4LL/A",
-        "Store ID": "R286",
-        "lat": 34.76635,
-        "lon": -92.45902,
-        "observed_at": "2026-11-21T23:15:50Z",
-        "source_url": "https://pickupchecker.com/stores/arkansas/little-rock/thepromenadeatchenal",
-        "pickup_url": null
-      },
-      {
-        "key": "Apple|R414|MK1F4LL/A",
-        "Retailer": "Apple",
-        "Store": "4th Street",
-        "City": "Berkeley",
-        "State": "California",
-        "ZIP": "",
-        "Storage": "256GB",
-        "Color": "Night Sky",
-        "Part": "MK1F4LL/A",
-        "Store ID": "R414",
-        "lat": 37.869346,
-        "lon": -122.300122,
-        "observed_at": "2026-11-21T23:15:51Z",
-        "source_url": "https://pickupchecker.com/stores/california/berkeley/4thstreet",
-        "pickup_url": null
-      },
-      {
-        "key": "Apple|R007|MK1G4LL/A",
-        "Retailer": "Apple",
-        "Store": "Mall of America",
-        "City": "Bloomington",
-        "State": "Minnesota",
-        "ZIP": "",
-        "Storage": "512GB",
-        "Color": "Star White",
-        "Part": "MK1G4LL/A",
-        "Store ID": "R007",
-        "lat": 44.8543,
-        "lon": -93.244386,
-        "observed_at": "2026-11-21T23:15:52Z",
-        "source_url": "https://pickupchecker.com/stores/minnesota/bloomington/mallofamerica",
-        "pickup_url": null
-      },
-      {
-        "key": "Apple|R022|MK1G4LL/A",
-        "Retailer": "Apple",
-        "Store": "Rosedale Center",
-        "City": "Roseville",
-        "State": "Minnesota",
-        "ZIP": "",
-        "Storage": "512GB",
-        "Color": "Star White",
-        "Part": "MK1G4LL/A",
-        "Store ID": "R022",
-        "lat": 45.012576,
-        "lon": -93.173237,
-        "observed_at": "2026-11-21T23:15:52Z",
-        "source_url": "https://pickupchecker.com/stores/minnesota/roseville/rosedalecenter",
-        "pickup_url": null
-      }
-    ]
-  },
-  {
     "observed_at": "2026-11-22T03:12:23Z",
     "provider_at": "2026-11-22T03:11:54Z",
     "items": []
@@ -289,6 +215,46 @@
         "lon": -89.812433,
         "observed_at": "2026-11-22T18:35:22Z",
         "source_url": "https://pickupchecker.com/stores/tennessee/germantown/saddlecreek",
+        "pickup_url": null
+      }
+    ]
+  },
+  {
+    "observed_at": "2026-11-22T23:46:44Z",
+    "provider_at": "2026-11-22T23:46:36Z",
+    "items": [
+      {
+        "key": "Apple|R070|MK1F4LL/A",
+        "Retailer": "Apple",
+        "Store": "Arden Fair",
+        "City": "Sacramento",
+        "State": "California",
+        "ZIP": "",
+        "Storage": "256GB",
+        "Color": "Night Sky",
+        "Part": "MK1F4LL/A",
+        "Store ID": "R070",
+        "lat": 38.601039,
+        "lon": -121.426442,
+        "observed_at": "2026-11-22T23:46:34Z",
+        "source_url": "https://pickupchecker.com/stores/california/sacramento/ardenfair",
+        "pickup_url": null
+      },
+      {
+        "key": "Apple|R070|MK1G4LL/A",
+        "Retailer": "Apple",
+        "Store": "Arden Fair",
+        "City": "Sacramento",
+        "State": "California",
+        "ZIP": "",
+        "Storage": "512GB",
+        "Color": "Star White",
+        "Part": "MK1G4LL/A",
+        "Store ID": "R070",
+        "lat": 38.601039,
+        "lon": -121.426442,
+        "observed_at": "2026-11-22T23:46:34Z",
+        "source_url": "https://pickupchecker.com/stores/california/sacramento/ardenfair",
         "pickup_url": null
       }
     ]

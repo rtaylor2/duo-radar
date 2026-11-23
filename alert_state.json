@@ -1,46 +1,6 @@
 {
   "initialized": true,
-  "active": [
-    "Apple|R070|MK1F4LL/A",
-    "Apple|R070|MK1G4LL/A"
-  ],
-  "last_poll": "2026-11-22T23:46:44.846447+00:00",
-  "last_new": [
-    {
-      "key": "Apple|R070|MK1F4LL/A",
-      "Retailer": "Apple",
-      "Store": "Arden Fair",
-      "City": "Sacramento",
-      "State": "California",
-      "ZIP": "",
-      "Storage": "256GB",
-      "Color": "Night Sky",
-      "Part": "MK1F4LL/A",
-      "Store ID": "R070",
-      "lat": 38.601039,
-      "lon": -121.426442,
-      "observed_at": "2026-11-22T23:46:34Z",
-      "source_url": "https://pickupchecker.com/stores/california/sacramento/ardenfair",
-      "pickup_url": null,
-      "detected_at": "2026-11-22T23:46:44.846450+00:00"
-    },
-    {
-      "key": "Apple|R070|MK1G4LL/A",
-      "Retailer": "Apple",
-      "Store": "Arden Fair",
-      "City": "Sacramento",
-      "State": "California",
-      "ZIP": "",
-      "Storage": "512GB",
-      "Color": "Star White",
-      "Part": "MK1G4LL/A",
-      "Store ID": "R070",
-      "lat": 38.601039,
-      "lon": -121.426442,
-      "observed_at": "2026-11-22T23:46:34Z",
-      "source_url": "https://pickupchecker.com/stores/california/sacramento/ardenfair",
-      "pickup_url": null,
-      "detected_at": "2026-11-22T23:46:44.846452+00:00"
-    }
-  ]
+  "active": [],
+  "last_poll": "2026-11-23T04:01:56.208861+00:00",
+  "last_new": []
 }

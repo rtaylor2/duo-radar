@@ -1,6 +1,27 @@
 {
   "initialized": true,
-  "active": [],
-  "last_poll": "2026-11-23T14:25:03.401195+00:00",
-  "last_new": []
+  "active": [
+    "Apple|R186|MK1G4LL/A"
+  ],
+  "last_poll": "2026-11-24T01:45:10.323123+00:00",
+  "last_new": [
+    {
+      "key": "Apple|R186|MK1G4LL/A",
+      "Retailer": "Apple",
+      "Store": "Shayden Summit",
+      "City": "Reno",
+      "State": "Nevada",
+      "ZIP": "",
+      "Storage": "512GB",
+      "Color": "Star White",
+      "Part": "MK1G4LL/A",
+      "Store ID": "R186",
+      "lat": 39.4031,
+      "lon": -119.7516,
+      "observed_at": "2026-11-24T01:44:49Z",
+      "source_url": "https://pickupchecker.com/stores/nevada/reno/shaydensummit",
+      "pickup_url": null,
+      "detected_at": "2026-11-24T01:45:10.323126+00:00"
+    }
+  ]
 }

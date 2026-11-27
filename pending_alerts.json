@@ -83,5 +83,39 @@
     "observed_at": "2026-11-26T23:52:46Z",
     "source_url": "https://pickupchecker.com/stores/michigan/novi/twelveoaks",
     "pickup_url": null
+  },
+  {
+    "key": "Apple|R317|MK1F4LL/A",
+    "Retailer": "Apple",
+    "Store": "State Street",
+    "City": "Santa Barbara",
+    "State": "California",
+    "ZIP": "",
+    "Storage": "256GB",
+    "Color": "Night Sky",
+    "Part": "MK1F4LL/A",
+    "Store ID": "R317",
+    "lat": 34.421328623322,
+    "lon": -119.701544216385,
+    "observed_at": "2026-11-27T05:28:36Z",
+    "source_url": "https://pickupchecker.com/stores/california/santa-barbara/statestreet",
+    "pickup_url": null
+  },
+  {
+    "key": "Apple|R090|MK1G4LL/A",
+    "Retailer": "Apple",
+    "Store": "Washington Square",
+    "City": "Tigard",
+    "State": "Oregon",
+    "ZIP": "",
+    "Storage": "512GB",
+    "Color": "Star White",
+    "Part": "MK1G4LL/A",
+    "Store ID": "R090",
+    "lat": 45.450701,
+    "lon": -122.780998,
+    "observed_at": "2026-11-27T05:28:35Z",
+    "source_url": "https://pickupchecker.com/stores/oregon/tigard/washingtonsquare",
+    "pickup_url": null
   }
 ]
